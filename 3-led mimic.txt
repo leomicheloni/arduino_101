@@ -1,0 +1,13 @@
+int pin = 13;
+int input = 12;
+int val = 0;
+
+void setup(){
+  pinMode(pin, OUTPUT);
+  pinMode(input, INPUT);
+}
+
+void loop(){
+  val = digitalRead(input);  
+  digitalWrite(pin, val);
+}
